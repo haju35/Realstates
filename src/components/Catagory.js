@@ -6,16 +6,18 @@ import icon5 from "../img/icon-building.png"
 import icon6 from "../img/icon-neighborhood.png"
 import icon7 from "../img/icon-condominium.png"
 import icon8 from "../img/icon-luxury.png"
+import { Link } from 'react-router-dom';
 function catagory() {
   return (
-    <div class="container-xxl py-5">
+    <div  class="container-xxl py-5" id="propertyTypeRedirect">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{maxWidth: '600px'}}>
                     <h1 class="mb-3">Property Types</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                    <p>Learn about the different types of properties we manage.</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <Link to="/apartments" className="cat-item d-block bg-light text-center rounded p-3">
                         <a class="cat-item d-block bg-light text-center rounded p-3" href="/">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
@@ -25,8 +27,10 @@ function catagory() {
                                 <span>123 Properties</span>
                             </div>
                         </a>
+                        </Link>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <Link to="/villa" className="cat-item d-block bg-light text-center rounded p-3">
                         <a class="cat-item d-block bg-light text-center rounded p-3" href="/">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
@@ -36,9 +40,11 @@ function catagory() {
                                 <span>123 Properties</span>
                             </div>
                         </a>
+                        </Link>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="/">
+
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="/home">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
                                     <img class="img-fluid" src={icon3} alt="Icon"/>
@@ -47,9 +53,10 @@ function catagory() {
                                 <span>123 Properties</span>
                             </div>
                         </a>
+                        
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="/">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="/office">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
                                     <img class="img-fluid" src={icon4} alt="Icon"/>
@@ -60,7 +67,7 @@ function catagory() {
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="/">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="/Building">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
                                     <img class="img-fluid" src={icon5} alt="Icon"/>
@@ -71,7 +78,7 @@ function catagory() {
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="/">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="/Townhouse">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
                                     <img class="img-fluid" src={icon6} alt="Icon"/>
@@ -82,7 +89,7 @@ function catagory() {
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="/">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="/Townhouse">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
                                     <img class="img-fluid" src={icon7} alt="Icon"/>
@@ -93,7 +100,7 @@ function catagory() {
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="/">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="/Garage">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
                                     <img class="img-fluid" src={icon8} alt="Icon"/>

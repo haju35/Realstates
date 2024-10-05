@@ -8,11 +8,12 @@
 
 .back-to-top {
     position: fixed;
-    display: none;
     right: 45px;
     bottom: 45px;
     z-index: 99;
+    padding: 0.4rem 0.8rem !important;
 }
+
 body{
     background-color: #fff;
 }
@@ -97,7 +98,7 @@ body{
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: var(--primary) !important;
 }
 
 @media (max-width: 991.98px) {
@@ -287,6 +288,10 @@ body{
     color: var(--primary);
     background: #FFFFFF;
     box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
 .team-item .btn:hover {
@@ -386,12 +391,16 @@ body{
     transition: .3s;
 }
 
-.footer .btn.btn-link::before {
+/* .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
+} */
+
+.footer-navlink > * {
+    margin-right: 5px;
 }
 
 .footer .btn.btn-link:hover {
@@ -423,4 +432,67 @@ body{
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+.react-multiple-carousel__arrow {
+    background: #00B98E !important;
+}
+
+.react-multiple-carousel__arrow:hover {
+    background: #0E2E50 !important;
+}
+
+.testimonial-item > div {
+    box-shadow: 0px 0px 0px 10px #00B98E20;
+    width: 80%;
+    border-radius: 15px !important;
+}
+
+.testimonial-item {
+    display: flex;
+}
+
+.react-multi-carousel-item > li {
+    position: relative;
+}
+
+.react-multi-carousel-item:nth-child(odd) > .testimonial-item {
+    justify-content: end;
+    position: absolute;
+    right: 10px;
+}
+
+.react-multi-carousel-item:nth-child(even) > .testimonial-item {
+    justify-content: start;
+}
+
+@media screen and (max-width: 1024px) {
+    .react-multi-carousel-item:nth-child(odd) > .testimonial-item {
+        justify-content: center;
+        position: static;
+        right: 0;
+    }
+    
+    .react-multi-carousel-item:nth-child(even) > .testimonial-item {
+        justify-content: center;
+    }
+}
+
+.rangeSelectorContainer {
+    background: white;
+    border-radius: 5px;
+    padding: 0px 20px;
+}
+
+.houseCard {
+    background: white;
+}
+
+.houseCardImage {
+    width: 100%;
+}
+
+.searchResultContainer {
+    row-gap: 40px;
+    padding: 50px 10px;
 }

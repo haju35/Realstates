@@ -1,0 +1,122 @@
+[
+    {
+        "id": "1",
+        "name": "Golden Urban House For Sell",
+        "image": "https://i.postimg.cc/ZCtvJRxd/property-1.jpg",
+        "use": "For Sell",
+        "propertyType": "Apartment",
+        "price": "$12,345",
+        "location": "123 Street, New York, USA",
+        "areasqft": "1000",
+        "beds": "3",
+        "bathrooms": "2"
+    },
+    {
+        "id": "2",
+        "name": "Luxury Villa with Sea View",
+        "image": "https://i.postimg.cc/KRPkj20s/property-2.jpg",
+        "use": "For Rent",
+        "propertyType": "Villa",
+        "price": "$4,500/month",
+        "location": "456 Beach Road, Miami, USA",
+        "areasqft": "3500",
+        "beds": "5",
+        "bathrooms": "4"
+    },
+    {
+        "id": "3",
+        "name": "Cozy Suburban Home",
+        "image": "https://i.postimg.cc/06BrF2Nr/property-3.jpg",
+        "use": "For Sell",
+        "propertyType": "House",
+        "price": "$450,000",
+        "location": "789 Maple Avenue, Chicago, USA",
+        "areasqft": "2200",
+        "beds": "4",
+        "bathrooms": "3"
+    },
+    {
+        "id": "4",
+        "name": "Modern Downtown Condo",
+        "image": "https://i.postimg.cc/qNQNcGVs/property-4.jpg",
+        "use": "For Sell",
+        "propertyType": "Condo",
+        "price": "$650,000",
+        "location": "101 High Street, San Francisco, USA",
+        "areasqft": "1500",
+        "beds": "2",
+        "bathrooms": "2"
+    },
+    {
+        "id": "5",
+        "name": "Charming Cottage in Countryside",
+        "image": "https://i.postimg.cc/7C6fKTwp/property-5.jpg",
+        "use": "For Sell",
+        "propertyType": "Cottage",
+        "price": "$275,000",
+        "location": "202 River Road, Vermont, USA",
+        "areasqft": "1800",
+        "beds": "3",
+        "bathrooms": "2"
+    },
+    {
+        "id": "6",
+        "name": "Spacious Family House",
+        "image": "https://i.postimg.cc/MnzcjF4Z/property-6.jpg",
+        "use": "For Rent",
+        "propertyType": "House",
+        "price": "$3,200/month",
+        "location": "303 Oak Street, Los Angeles, USA",
+        "areasqft": "2800",
+        "beds": "4",
+        "bathrooms": "3.5"
+    },
+    {
+        "id": "7",
+        "name": "Penthouse with City View",
+        "image": "https://i.postimg.cc/06BrF2Nr/property-3.jpg",
+        "use": "For Sell",
+        "propertyType": "Penthouse",
+        "price": "$1,200,000",
+        "location": "404 Skyline Blvd, New York, USA",
+        "areasqft": "3200",
+        "beds": "3",
+        "bathrooms": "3"
+    },
+    {
+        "id": "8",
+        "name": "Urban Loft in Historic District",
+        "image": "https://i.postimg.cc/7C6fKTwp/property-5.jpg",
+        "use": "For Sell",
+        "propertyType": "Loft",
+        "price": "$500,000",
+        "location": "505 Old Town Road, Boston, USA",
+        "areasqft": "1200",
+        "beds": "2",
+        "bathrooms": "1.5"
+    },
+    {
+        "id": "9",
+        "name": "Mountain Retreat Cabin",
+        "image": "https://i.postimg.cc/KRPkj20s/property-2.jpg",
+        "use": "For Rent",
+        "propertyType": "Cabin",
+        "price": "$2,800/month",
+        "location": "606 Pine Ridge, Aspen, USA",
+        "areasqft": "2000",
+        "beds": "3",
+        "bathrooms": "2.5"
+    },
+    {
+        "id": "10",
+        "name": "Beachfront Bungalow",
+        "image": "https://i.postimg.cc/MnzcjF4Z/property-6.jpg",
+        "use": "For Sell",
+        "propertyType": "Bungalow",
+        "price": "$950,000",
+        "location": "707 Ocean Drive, Malibu, USA",
+        "areasqft": "1500",
+        "beds": "2",
+        "bathrooms": "2"
+    }
+]

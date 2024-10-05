@@ -1,5 +1,8 @@
 import React from 'react'
 import icon from "../img/icon-deal.png"
+import { FaCaretDown } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
 function Navbar() {
   return (
     
@@ -17,25 +20,28 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto">
                 <a href="index.html" className="nav-item nav-link active">Home</a>
-                <a href="about.html" className="nav-item nav-link">About</a>
+                
+                <Link to="/about" className="nav-item nav-link">About</Link>
+
+
                 <div className="nav-item dropdown">
-                    <a href="/#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Property</a>
+                    <a href="/#" className="nav-link" data-bs-toggle="dropdown">Property <FaCaretDown /></a>
                     <div className="dropdown-menu rounded-0 m-0">
-                        <a href="property-list.html" className="dropdown-item">Property List</a>
-                        <a href="property-type.html" className="dropdown-item">Property Type</a>
-                        <a href="property-agent.html" className="dropdown-item">Property Agent</a>
+                        <a href="/#propertyListRedirect" className="dropdown-item">Property List</a>
+                        <a href="/#propertyTypeRedirect" className="dropdown-item">Property Type</a>
+                        <a href="/#propertyAgentRedirect" className="dropdown-item">Property Agent</a>
                     </div>
                 </div>
                 <div className="nav-item dropdown">
-                    <a href="/#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <a href="/#" className="nav-link" data-bs-toggle="dropdown">Pages <FaCaretDown /></a>
                     <div className="dropdown-menu rounded-0 m-0">
-                        <a href="testimonial.html" className="dropdown-item">Testimonial</a>
+                        <a href="/#testimonials" className="dropdown-item">Testimonial</a>
                         <a href="404.html" className="dropdown-item">404 Error</a>
                     </div>
                 </div>
-                <a href="contact.html" className="nav-item nav-link">Contact</a>
+                <a href="/#footer" className="nav-item nav-link">Contact</a>
             </div>
-            <a href="/" className="btn btn-primary px-3 d-none d-lg-flex">Add Property</a>
+            <a href="/login" className="btn btn-primary px-3 d-none d-lg-flex">Sign In</a>
         </div>
     </nav>
 </div>
