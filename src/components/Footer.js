@@ -40,16 +40,16 @@ function Footer() {
 <p className="mb-2"><IoCallSharp/>+012 345 67890</p>
 <p className="mb-2"><MdMarkEmailRead/>info@example.com</p>
 <div className="d-flex pt-2">
-             <a className="btn btn-outline-light btn-social" href="/"><FaFacebookF /></a>
-             <a className="btn btn-outline-light btn-social" href="/"><FaTelegramPlane /></a>
-             <a className="btn btn-outline-light btn-social" href="/"><FaInstagram /></a>
-             <a className="btn btn-outline-light btn-social" href="/"><FaLinkedinIn/></a>
+             <a className="btn btn-outline-light btn-social" href="https://facebook.com/hajira"><FaFacebookF /></a>
+             <a className="btn btn-outline-light btn-social" href="https://t.me/hajira"><FaTelegramPlane /></a>
+             <a className="btn btn-outline-light btn-social" href="https://instagram.com/hajira" ><FaInstagram /></a>
+             <a className="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/hajira-siraj-66031a259"><FaLinkedinIn/></a>
         </div>
       </div>
       <div className="col-lg-3 col-md-6">
 <h5 className="text-white mb-4" id = "contact">Quick Links</h5>
-<a className="btn btn-link text-white-50 footer-navlink" href="/"><MdOutlineArrowForwardIos />About Us</a>
-<a className="btn btn-link text-white-50 footer-navlink" href="/"><MdOutlineArrowForwardIos />Contact Us</a>
+<a className="btn btn-link text-white-50 footer-navlink" href="/about"><MdOutlineArrowForwardIos />About Us</a>
+<a className="btn btn-link text-white-50 footer-navlink" href="/contact"><MdOutlineArrowForwardIos />Contact Us</a>
 <a className="btn btn-link text-white-50 footer-navlink" href="/"><MdOutlineArrowForwardIos />Our Services</a>
 <a className="btn btn-link text-white-50 footer-navlink" href="/"><MdOutlineArrowForwardIos />Privacy Policy</a>
 <a className="btn btn-link text-white-50 footer-navlink" href="/"><MdOutlineArrowForwardIos />Terms & Condition</a>
@@ -79,10 +79,11 @@ function Footer() {
 </div>
 <div className="col-lg-3 col-md-6">
 <h5 className="text-white mb-4">Newsletter</h5>
-<p>Stay updated with the latest news and offers. Subscribe now to receive regular updates, promotions, and exclusive content straight to your inbox.</p>
+{/*<p>Stay updated with the latest news and offers. Subscribe now to receive regular updates, promotions, and exclusive content straight to your inbox.</p>*/}
+<p>Stay updated with the latest news and offers. receive regular updates, promotions, and exclusive content straight to our contact.</p>
 <div className="position-relative mx-auto" style={{maxWidth: '400px'}}>
-<input className="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"/>
-<button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+{/*<input className="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"/>
+<button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>*/}
 </div>
 </div>
 </div>

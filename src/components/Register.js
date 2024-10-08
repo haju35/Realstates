@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
     const [firstName, setFirstName] = useState('');
@@ -7,15 +7,20 @@ const Register = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
+    
+    const navigate = useNavigate(); // Initialize useNavigate
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle registration logic here
+        // Handle registration logic here (e.g., API call)
         console.log('First Name:', firstName);
         console.log('Last Name:', lastName);
         console.log('Email:', email);
         console.log('Password:', password);
         console.log('Confirm Password:', confirmPassword);
+
+        // After successful registration, navigate to the login page
+        navigate('/login');
     };
 
     return (
@@ -120,9 +125,7 @@ const Register = () => {
                         </div>
                     </main>
                 </div>
-                <div id="layoutAuthentication_footer">
-                   
-                </div>
+                <div id="layoutAuthentication_footer"></div>
             </div>
         </div>
     );

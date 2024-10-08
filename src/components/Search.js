@@ -17,6 +17,7 @@ function Search() {
       priceRange,
     }).toString();
 
+    // Navigate to the search page with the query parameters
     navigate(`/search?${queryParams}`);
   };
 
@@ -43,6 +44,7 @@ function Search() {
                 >
                   <option value="">Property Type</option>
                   <option value="Villa">Villa</option>
+                  <option value="Apartments">Apartments</option>
                   <option value="House">House</option>
                   <option value="Condo">Condo</option>
                   <option value="Cottage">Cottage</option>
@@ -57,12 +59,12 @@ function Search() {
                   onChange={(e) => setLocation(e.target.value)}
                 >
                   <option value="">Location</option>
-                  <option value="Addis Ababa,Bole">Addis Ababa, Bole</option>
-                  <option value="Addis Ababa,Gergi">Addis Ababa, Gergi</option>
-                  <option value="Addis Ababa,Jemo">Addis Ababa, Jemo</option>
-                  <option value="Addis Ababa,Piassa">Addis Ababa, Piassa</option>
-                  <option value="Addis Ababa,CMC">Addis Ababa, CMC</option>
-                  <option value="Addis Ababa,Wesen">Addis Ababa, Wesen</option>
+                  <option value="Addis Ababa, Bole">Addis Ababa, Bole</option>
+                  <option value="Addis Ababa, Gergi">Addis Ababa, Gergi</option>
+                  <option value="Addis Ababa, Jemo">Addis Ababa, Jemo</option>
+                  <option value="Addis Ababa, Piassa">Addis Ababa, Piassa</option>
+                  <option value="Addis Ababa, CMC">Addis Ababa, CMC</option>
+                  <option value="Addis Ababa, Wesen">Addis Ababa, Wesen</option>
                 </select>
               </div>
               <div className="col-12 col-md-3">

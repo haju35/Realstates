@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const Login = () => {
+const Login = ({ onLogin }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [rememberMe, setRememberMe] = useState(false);
     const [error, setError] = useState('');
+    
+    const navigate = useNavigate(); // Hook to navigate
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -15,8 +18,14 @@ const Login = () => {
             console.log('Password:', password);
             console.log('Remember Me:', rememberMe);
             
-            // If authentication fails, set the error
-            // setError('Login failed. Please try again.');
+            // Simulating successful login for demonstration
+            // Remove this in production, and replace with actual authentication logic
+            if (email && password) {
+                onLogin(); // Call the onLogin function to set authenticated state
+                navigate('/add-property'); // Redirect to Add Property page
+            } else {
+                throw new Error('Login failed'); // Simulate login failure
+            }
         } catch (err) {
             setError('Login failed. Please try again.');
         }
@@ -42,13 +51,18 @@ const Login = () => {
                                                         className="form-control"
                                                         id="inputEmail"
                                                         type="email"
-                                                        placeholder="name@example.com"
+                                                        placeholder="Enter your email"
                                                         value={email}
                                                         onChange={(e) => setEmail(e.target.value)}
                                                         required
+                                                        autoComplete="off" 
                                                     />
                                                     <label htmlFor="inputEmail">Email address</label>
                                                 </div>
+
+
+
+                                                
                                                 <div className="form-floating mb-3">
                                                     <input
                                                         className="form-control"

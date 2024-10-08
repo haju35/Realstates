@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Luxury Villa",
+    "category": "Villa",
+    "address": "Addis Ababa, Bole",
+    "price": "$500000"
+  },
+  {
+    "name": "Modern Condo",
+    "category": "Condo",
+    "address": "Addis Ababa, Piassa",
+    "price": "$300000"
+  }
+]

@@ -496,3 +496,39 @@ body{
     row-gap: 40px;
     padding: 50px 10px;
 }
+
+
+.btn-hover-effect {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .btn-hover-effect::before {
+    content: 'Discover more listings and services!';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 123, 255, 0.9); /* Primary color with opacity */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.3s ease;
+    z-index: -1;
+  }
+  
+  .btn-hover-effect:hover::before {
+    top: 0; /* Moves the hidden content upwards on hover */
+  }
+
+  .property-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the area while maintaining aspect ratio */
+    display: block; /* Removes any unwanted space around the image */
+}
+
+  

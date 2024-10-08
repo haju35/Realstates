@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
-import { Form, Button, Container, Row, Col } from 'react-bootstrap';
+import { Form, Button, Container, Row, Col, Modal } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +9,8 @@ const Contact = () => {
     subject: '',
     message: '',
   });
+  const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate(); // For redirecting to the home page
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,11 +24,19 @@ const Contact = () => {
     e.preventDefault();
     // Handle form submission, e.g., send the form data to the backend
     console.log('Form submitted:', formData);
+
+    // Show the success modal
+    setShowModal(true);
+
+    // Redirect to the home page after 2 seconds
+    setTimeout(() => {
+      setShowModal(false);
+      navigate('/'); // Redirect to the home page
+    }, 2000);
   };
 
   return (
     <section>
-      <Navbar />
       <Container className="my-5" id="contact">
         <h1 className="display-4 text-center mb-4">Contact Us</h1>
         <p className="lead text-center mb-4">
@@ -90,6 +100,13 @@ const Contact = () => {
             </Form>
           </Col>
         </Row>
+
+        {/* Success Modal */}
+        <Modal show={showModal} onHide={() => setShowModal(false)} centered>
+          <Modal.Body>
+            <h5 className="text-center">Message sent successfully!</h5>
+          </Modal.Body>
+        </Modal>
       </Container>
     </section>
   );

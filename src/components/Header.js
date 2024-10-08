@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import carouse from "../img/carousel-1.jpg"
-import carouse2 from "../img/carousel-2.jpg"
+import carouse from "../img/b2.jpg"
+import carouse2 from "../img/building1.jpg"
 
 const responsive = {
     superLargeDesktop: {

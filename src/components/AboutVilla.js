@@ -1,28 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Navbar from "./Navbar";
+import property1 from '../img/villa1.jpg';
 
+function AboutVilla() {
+  const sampleVillas = [
+    {
+      name: "Luxury Villa 1",
+      address: "123 Beach St, City",
+      price: "$3000/month",
+      image: property1,
+    },
+  ];
 
-
-
-const AboutVilla = () => {
   return (
-    <section>
-      <Navbar />
-    <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-      <Link to="/villa" className="cat-item d-block bg-light text-center rounded p-3">
-        <div className="rounded p-4">
-          <div className="icon mb-3">
-             {/* This is an image for the Villa Icon */}
-            {/* <img className="img-fluid" src={villaIcon} alt="Villa Icon" />*/}
-          </div>
-          <h6>Villa</h6>
-          <span>50 Properties</span>
+    <div className="container-xxl py-5">
+      <div className="container">
+        <div className="text-center mx-auto mb-5">
+          <h1 className="mb-3">Villas</h1>
+          <p>Explore our luxurious villas.</p>
         </div>
-      </Link>
+        <div>
+          {sampleVillas.map((villa, index) => (
+            <div key={index} className="villa-item bg-light p-3 rounded mb-4">
+              <h6>{villa.name}</h6>
+              <p>{villa.address}</p>
+              <p>Price: {villa.price}</p>
+              <img src={villa.image} alt={villa.name} className="img-fluid" style={{ width: '200px', height: 'auto' }} />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
-    </section>
   );
-};
+}
 
 export default AboutVilla;

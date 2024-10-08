@@ -1,6 +1,6 @@
-import testimonies from "../img/testimonial-1.jpg"
-import testimonies2 from "../img/testimonial-2.jpg"
-import testimonies3 from "../img/testimonial-3.jpg"
+import testimonies from "../img/nur.jpg"
+import testimonies2 from "../img/mahi.jpg"
+import testimonies3 from "../img/haju.jpg"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -51,7 +51,7 @@ function Testimonial() {
             </div>
             <div class="testimonial-item bg-light rounded p-3">
                 <div class="bg-white border rounded p-4">
-                    <p>The team was incredibly supportive and patient. They answered all my questions and helped me find my dream home.</p>
+                    <p>The team was incredibly supportive. They answered all my questions and helped me find my dream home.</p>
                     <div class="d-flex align-items-center">
                         <img class="img-fluid flex-shrink-0 rounded" src={testimonies2} style={{width: '45px', height: '45px'}}alt=""/>
                         <div class="ps-3">

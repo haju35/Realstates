@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+
 import Header from "./Header";
 import Search from "./Search";
 import Catagory from "./Catagory";
@@ -12,7 +12,6 @@ import Footer from "./Footer";
 function LandingPage() {
     return (
         <section>
-            <Navbar/>
             <Header/>
             <Search/>
             <Catagory/>

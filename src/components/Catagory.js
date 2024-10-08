@@ -17,7 +17,7 @@ function catagory() {
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <Link to="/apartments" className="cat-item d-block bg-light text-center rounded p-3">
+                    <Link to="/AboutApartment" className="cat-item d-block bg-light text-center rounded p-3">
                         <a class="cat-item d-block bg-light text-center rounded p-3" href="/">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
@@ -30,7 +30,8 @@ function catagory() {
                         </Link>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <Link to="/villa" className="cat-item d-block bg-light text-center rounded p-3">
+                    <Link to="/AboutVilla" className="cat-item d-block bg-light text-center rounded p-3">
+
                         <a class="cat-item d-block bg-light text-center rounded p-3" href="/">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
